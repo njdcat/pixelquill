@@ -31,6 +31,7 @@ export interface ToolPoint { x: number; y: number; pressure: number; time: numbe
 export type BrushShape = "square" | "circle";
 /** Size is an integer from 1 through 64. */
 export interface Brush { shape: BrushShape; size: number }
+/** Replaces this layer's cel for this frame with image at (x, y) during a stroke. */
 export interface ToolPreview {
   layerId: number; frame: number; x: number; y: number; image: PixelImage;
 }
